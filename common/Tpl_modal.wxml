@@ -1,0 +1,64 @@
+<template name="modal_accounts">
+	<!-- <modal class="modal" hidden="{{modalHide}}" no-cancel bindconfirm="modalChange" bindcancel="modalChange"> -->
+		<view class="newModal flex flex-center flex-t-center" hidden="{{modalHide}}" catchtap="modalChange">
+			<view class="weui-cells_after-title newCells newModal_body" >
+				<view class="weui-cell" data-id="{{item.id}}" >
+					<view class="con_left">
+						<view class="weui-cell__hd newCells_img">
+							<image src="{{item.thumbnail||'../../assets/images/icon-xiao.jpg'}}"  />
+						</view>
+						<view class="weui-cell__bd title">
+							{{item.title}}
+						</view>
+					</view>
+					<!-- end .con_left -->
+					<view class="con_right">
+						<view class="con_right_up">
+							<view class="fans">粉丝数</view>
+							<view class="read">头条阅读</view>
+							<view class="sex">男女比例</view>
+						</view>
+						<view class="con_right_down">
+							<view class="fans">{{item.fans}}</view>
+							<view class="read">{{item.read}}</view>
+							<view class="sex">{{item.gender}}</view>
+						</view>
+						<view class="con_right_tags">
+							<view style="border-radius: 5px;background: #e94c32;border-right: 5px solid #e94c32;border-left: 5px solid #e94c32;">关联</view>
+							<view style="border-radius: 5px;background: #e94c32;margin-left: 10px;border-right: 5px solid #e94c32;border-left: 5px solid #e94c32;">关联</view>
+							<view style="border-radius: 5px;background: #e94c32;margin-left: 10px;border-right: 5px solid #e94c32;border-left: 5px solid #e94c32;">关联</view>
+							<view style="border-radius: 5px;background: #bfbfbf;margin-left: 10px;border-right: 5px solid #bfbfbf;border-left: 5px solid #bfbfbf;">底部广告</view>
+					</view>
+					</view>
+					<!-- end .con-right -->
+
+				</view>
+			<!-- end .weui-cell -->
+			</view>
+			<view class="overTag"></view>
+
+		<!-- end .weui-cells -->
+		</view>
+
+	<!-- </modal> -->
+</template>
+
+<template name="modal_desc">
+
+<!--  弹出模层  -->
+    <view class="ruleZhezhaoTip {{isRuleTipTrue?'isRuleShowTip':'isRuleHideTip'}}">
+    <view class='d-hearder'>{{desc.post_title}}</view>
+      <view class="desc" style="height:{{tipHeight}}rpx">
+        <view class='dhv'></view>
+        {{desc.post_content}} 
+      </view>
+       <view wx:if="{{!showDesc}}" class='btn-bottom'>
+          <view><button type="primary " bindtap='hideTipRule' class='n-btn'>不同意</button></view>
+          <view><button type="primary" bindtap='hideTipRule' class='y-btn'>同意</button></view>
+        </view>
+        <view class="tipv">
+          <image class="nclose-tip" bindtap='hideTipRule' src="/assets/images/ic_cancel.png"></image>
+        </view>
+    </view>
+    <!--  end  -->
+    </template>

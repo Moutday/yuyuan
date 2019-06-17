@@ -1,0 +1,8 @@
+/* pages/index/index.wxss */
+@import '../../base.wxss';
+@import '../../weui.wxss';
+
+page{
+    background: #fff;
+    overflow: hidden;
+}
