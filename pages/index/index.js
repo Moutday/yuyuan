@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    height: 400,
+    height: 850,
     scrollData: {
       indicatorDots: true,
       autoplay: true,
@@ -24,7 +24,8 @@ Page({
         '/assets/images/8.jpg',
         '/assets/images/9.jpg',
         '/assets/images/10.jpg',
-      ],
+      ], 
+
     },
   },
   
@@ -41,8 +42,15 @@ Page({
   },
   onHide:function(){
   },
-
+  openLoca(e) {
   
+    let lat = 23.184992;
+    let lng = 113.589863;
+    wx.openLocation({
+      latitude: lat,
+      longitude: lng,
+    })
+  },
 
 
 
@@ -61,7 +69,7 @@ Page({
   
   toPhone(){
     wx.makePhoneCall({
-      phoneNumber: '000000' // 仅为示例，并非真实的电话号码
+      phoneNumber: '15919339981' // 仅为示例，并非真实的电话号码
     })
   },
   

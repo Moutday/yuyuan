@@ -1,8 +1,22 @@
 /* pages/index/index.wxss */
 @import '../../base.wxss';
-@import '../../weui.wxss';
+@import '/weui.wxss';
 
 page{
-    background: #fff;
+    background: #eeeeee;
     overflow: hidden;
+}
+
+.cell_avatar{
+  height: 50rpx;
+  width: 50rpx;
+}
+.weui-cells{
+  margin-top: 40rpx;
+}
+.cell_yc_desc{
+  margin-left: 30rpx;
+}
+.weui-cell{
+  border-bottom: 5px solid #eeeeee
 }

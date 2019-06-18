@@ -1,3 +1,25 @@
 <import src="../../common/Tpl_header.wxml"/>
 <template is="scrollHeader" data="{{...scrollData,height}}"/>
-<view>111</view>
+
+<view class="weui-cells">
+   <view class="weui-cell" bindtap='openLoca'>
+                <view class="weui-cell__hd"><image class="cell_avatar"   src="/assets/images/location.png" /></view>
+                <view class="weui-cell__bd">
+                    <view class="cell_yc_desc">广州市增城区新塘永和新新六路275号</view>
+                </view>
+                <view class="weui-cell__ft">></view>
+    </view>
+       <view class="weui-cell">
+                <view class="weui-cell__hd"><image class="cell_avatar"   src="/assets/images/time.png" /></view>
+                <view class="weui-cell__bd">
+                    <view class="cell_yc_desc">营业时间 : 8:00 -- 20:00</view>
+                </view>
+    </view>
+       <view class="weui-cell">
+                <view class="weui-cell__hd"><image class="cell_avatar"   src="/assets/images/phone.png" /></view>
+                <view class="weui-cell__bd">
+                    <view class="cell_yc_desc" bindtap='toPhone'>15919339981</view>
+                </view>
+                <view class="weui-cell__ft">></view>
+    </view>
+</view>

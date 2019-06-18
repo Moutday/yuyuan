@@ -10,7 +10,7 @@
 	<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:{{height}}rpx;">
 		<block wx:for="{{imgUrls}}">
 			<swiper-item bindtap="navigateToTourDetail">
-			    <image url="{{item}}" mode="aspectFit" class="classname"  style="background:url('{{item}}')no-repeat;background-size:cover;background-position:center;width:100%;height:{{height}}rpx"></image>
+			    <image src="{{item}}"  class="classname" style='width:100%;height:{{height}}rpx'></image>
       	<view class="h-pos-shadow"></view>
 			</swiper-item>
 		</block>
