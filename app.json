@@ -14,6 +14,8 @@
     "scope.userLocation": {
       "desc": "你的位置信息将用于小程序位置接口的效果展示"
     }
-  }
+  },
+  "serviceProviderTicket" : "x6b0ReCsd0U3G+CebrbyPlYolELr6zrk+/J4HiU+pzGobCmSaXsPSQxxfr7oVuUzfoNJkA5J/k1HouBGP7a2zd1obsb3ivzoBKc="
+
 
 }
